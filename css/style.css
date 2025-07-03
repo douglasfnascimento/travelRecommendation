@@ -1,0 +1,302 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: 999;
+    padding: 0.5rem 0;
+}
+
+header .header-inner {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #0077cc;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0077cc !important;
+}
+
+nav a:visited,
+nav a:focus,
+nav a:active {
+    color: white;
+}
+
+#search-input {
+    padding: 0.4rem 0.5rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222;
+    color: #eee;
+    font-size: 1rem;
+}
+
+#search-input::placeholder {
+    color: #bbb;
+}
+
+#search-btn button,
+#reset-btn button {
+    padding: 0.4rem 1rem;
+    height: 2rem;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+#search-btn button:hover,
+#reset-btn button:hover {
+    background-color: #005fa3;
+}
+
+body {
+  background-image: url('../assets/images/background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  gap: 3rem;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+.cta {
+  position: fixed;
+  top: 10rem;
+  left: 10%;
+  width: calc(80% / 2);
+  background: #ffffff73;
+  padding-inline: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #222;
+  backdrop-filter: saturate(180%) blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cta h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #111;
+  text-shadow: none;
+}
+
+.cta p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #333;
+  text-shadow: none;
+}
+
+.results {
+  position: relative;
+  left: 60%;
+  width: calc(80% / 2);
+}
+
+.recommendation-container {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.recommendation-container img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.recommendation-container h2 {
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: #333;
+}
+
+.recommendation-container p {
+    font-size: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.about-text {
+  background: #ffffff73;
+  backdrop-filter: blur(8px);
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 8rem auto 4rem auto;
+  width: 80%;
+  color: #222;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.team-container {
+  background: #ffffff73;
+  backdrop-filter: blur(8px);
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+.team-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.team-item {
+  display: inline-block;
+  width: 200px;
+  margin: 1rem;
+  vertical-align: top;
+}
+
+.team-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-item h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0.2rem 0;
+  color: #333;
+}
+
+.team-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-container {
+  background: #ffffff73;
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  margin: 8rem auto 4rem auto;
+  color: #222;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #111;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.contact-container button {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-container button:hover {
+  background-color: #005fa3;
+}
