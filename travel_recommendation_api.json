@@ -38,12 +38,12 @@
             "cities": [
                 {
                     "name": "Rio de Janeiro, Brazil",
-                    "imageUrl": "assets/images/rio-de-janeiro.jpg",
+                    "imageUrl": "/rio-de-janeiro.jpg",
                     "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
                 },
                 {
                     "name": "São Paulo, Brazil",
-                    "imageUrl": "assets/images/sao-paulo.jpg",
+                    "imageUrl": "/sao-paulo.jpg",
                     "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
                 }
             ]
